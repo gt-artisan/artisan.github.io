@@ -1,0 +1,15 @@
+title: ARTISAN @ Georgia Tech
+description: Interdisciplinary AI4Science research and the Nexus cyberinfrastructure platform.
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+minima:
+  skin: auto
+header_pages:
+  - research.md
+  - ai4science.md
+  - nexus.md
+  - people.md
+  - publications.md
+  - news.md
