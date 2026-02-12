@@ -1,10 +1,3 @@
-title: "ARTISAN — Georgia Tech"
-description: "Center for Artificial Intelligence in Science and Engineering at Georgia Tech"
-baseurl: ""
-url: "https://gt-artisan.github.io"
-theme: null
-markdown: kramdown
-
 nav:
   - { label: "Home", href: "/" }
   - { label: "Research", href: "/research" }
@@ -12,5 +5,6 @@ nav:
   - { label: "Scientific Software", href: "/scientific-software" }
   - { label: "Events", href: "/events" }
   - { label: "ARTISAN Team", href: "/team" }
+  - { label: "Publications", href: "/publications" }   # ← add this
   - { label: "Contact", href: "/contact" }
   - { label: "Careers", href: "/careers" }
