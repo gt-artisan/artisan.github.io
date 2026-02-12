@@ -63,3 +63,82 @@
   - Tyler L. Hayes
   - Giri P. Krishnan
   url: https://arxiv.org/abs/2511.14781
+- id: wannipurage2021multi
+  type: article
+  title: A multi-protocol, secure, and dynamic data storage integration frameworkfor
+    multi-tenanted science gateway middleware
+  year: 2021
+  authors:
+  - Wannipurage, Dimuthu
+  - Ranawaka, Isuru
+  - Abeysinghe, Eroma
+  - Christie, Marcus
+  - Marru, Suresh
+  - Pierce, Marlon
+  venue: arXiv preprint arXiv:2107.03882
+- id: christie2023airavata
+  type: incollection
+  title: 'Airavata data catalog: A multi-tenant metadata service for efficient data
+    discovery and access control'
+  year: 2023
+  authors:
+  - Christie, Marcus
+  - Marru, Suresh
+  - Pamidighantam, Sudhakar
+  - Ranawaka, Isuru
+  - Wannipurage, Dimuthu
+  venue: 'Practice and Experience in Advanced Research Computing 2023: Computing for
+    the Common Good'
+- id: ranawaka2023airavata
+  type: incollection
+  title: 'Airavata Metascheduler: A Reliable, Fault Tolerant, and Resource-Aware Job
+    Scheduling Service'
+  year: 2023
+  authors:
+  - Ranawaka, Isuru
+  - Abeysinghe, Eroma
+  - Wannipurage, Dimuthu
+  - De Silva, Dinuka
+  - Brookes, Emre
+  - Marru, Suresh
+  - Christie, Marcus
+  - Pamidighantam, Sudhakar
+  - Pierce, Marlon
+  venue: 'Practice and Experience in Advanced Research Computing 2023: Computing for
+    the Common Good'
+- id: ranawaka2020custos
+  type: incollection
+  title: 'Custos: Security middleware for science gateways'
+  year: 2020
+  authors:
+  - Ranawaka, Isuru
+  - Marru, Suresh
+  - Graham, Juleen
+  - Bisht, Aarushi
+  - Basney, Jim
+  - Fleury, Terry
+  - Gaynor, Jeff
+  - Wannipurage, Dimuthu
+  - Christie, Marcus
+  - Mahmoud, Alexandru
+  - others
+  venue: 'Practice and Experience in Advanced Research Computing 2020: Catch the Wave'
+- id: marru2023blaze
+  type: inproceedings
+  title: 'Blaze: A high-performance, scalable, and efficient data transfer framework
+    with configurable and extensible features: Principles, implementation, and evaluation
+    of a transatlantic inter-cloud data transfer case study'
+  year: 2023
+  authors:
+  - Marru, Suresh
+  - Freitag, Brian
+  - Wannipurage, Dimuthu
+  - Bommala, Uday Kumar
+  - Pradier, Patrick
+  - Demange, Christophe
+  - Pantha, Nishan
+  - Mukherjee, Tathagata
+  - Rosich, Betlem
+  - Monjoux, Eric
+  - others
+  venue: 2023 IEEE 16th International Conference on Cloud Computing (CLOUD)
