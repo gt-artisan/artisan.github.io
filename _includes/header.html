@@ -1,12 +1,15 @@
-<header class="site-header">
+\<header class="site-header">
   <div class="container header-inner">
-    <!-- Replace with approved unit lockup when available -->
-    <a href="{{ '/' | relative_url }}" class="text-logo">{{ site.title }}</a>
+    <!-- Replace this text with the approved ARTISAN unit lockup when available -->
+    <a href="{{ '/' | relative_url }}" class="text-white" style="font-weight:700; font-size:1.1rem;">
+      {{ site.title }}
+    </a>
+
     <nav class="site-nav">
       {% for item in site.nav %}
         <a href="{{ item.href | relative_url }}">{{ item.label }}</a>
       {% endfor %}
-      <a href="https://github.com/GT-ARTISAN" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://github.com/GT-ARTISAN" rel="noopener">GitHub</a>
     </nav>
   </div>
 </header>
