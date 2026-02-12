@@ -1,10 +1,25 @@
-- name: Suresh Marru
-  title: Director — ARTISAN; Principal Research Scientist
-  scholar: "https://scholar.google.com/citations?user=FVWrKb0AAAAJ&sortby=pubdate"
+# _data/team.yml
+# Tip: use spaces (no tabs), straight quotes, and quote any values with special characters.
+
+- name: "Suresh Marru"
+  title: "Director — ARTISAN; Principal Research Scientist"
+  scholar: "https://scholar.google.com/citations?hl=en&user=FVWrKb0AAAAJ&view_op=list_works&sortby=pubdate"
   linkedin: "https://www.linkedin.com/in/sureshmarru/"
-- name: Giri Krishnan
-  title: Associate Director — ARTISAN; Principal Research Scientist
-- name: Sudhakar Pamidighantam
-  title: Associate Director — ARTISAN; Principal Research Scientist
-# ... add the rest of the team
-``
+
+- name: "Giri Krishnan"
+  title: "Associate Director — ARTISAN; Principal Research Scientist"
+
+- name: "Sudhakar Pamidighantam"
+  title: "Associate Director — ARTISAN; Principal Research Scientist"
+
+- name: "Dimuthu Wannipurage"
+  title: "Senior Research Engineer"
+
+- name: "Lahiru Jayathilake"
+  title: "Research Scientist I"
+
+- name: "Eroma Abeysinghe"
+  title: "Senior Research Scientist"
+
+- name: "Yasith Jayawardana"
+  title: "Research Scientist II"

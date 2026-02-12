@@ -1,10 +1,17 @@
-- name: Apache Airavata
-  desc: "Open-source framework for workflows and apps on distributed HPC/cloud."
+# _data/software.yml
+
+- name: "Apache Airavata"
+  desc: "Open-source framework for managing and executing computational workflows and scientific applications on distributed HPC and cloud resources."
   url: "https://airavata.apache.org/"
-- name: Apache Custos
-  desc: "Open-source IAM for science gateways (OAuth2/OIDC, group/role mgmt)."
+
+- name: "Apache Custos"
+  desc: "Open-source identity and access management for science gateways and research apps (OAuth2/OIDC, groups/roles, fine-grained authorization)."
   url: "https://github.com/apache/custos"
-- name: Airavata MFT
-  desc: "High-performance, secure data movement across HPC/cloud."
+
+- name: "Airavata MFT"
+  desc: "High-performance, secure, multi-protocol data movement service for HPC, cloud, and gateways."
   url: "https://github.com/apache/airavata-mft"
-``
+
+- name: "Airavata Data Catalog"
+  desc: "Metadata management and data discovery service that organizes, searches, and secures research datasets; integrates with common storage backends."
+  url: "https://github.com/apache/airavata-data-lake"
