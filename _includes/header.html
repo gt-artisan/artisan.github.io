@@ -1,13 +1,12 @@
 <header class="site-header">
   <div class="container header-inner">
     <!-- Replace with approved unit lockup when available -->
-    {{ site.title }}</a>
-
+    <a href="{{ '/' | relative_url }}" class="text-logo">{{ site.title }}</a>
     <nav class="site-nav">
       {% for item in site.nav %}
-        {{ item.label }}</a>
+        <a href="{{ item.href | relative_url }}">{{ item.label }}</a>
       {% endfor %}
-      https://github.com/GT-ARTISANGitHub</a>
+      <a href="https://github.com/GT-ARTISAN" target="_blank" rel="noopener">GitHub</a>
     </nav>
   </div>
 </header>
