@@ -1,25 +1,23 @@
-<header>
-  <div class="wrap">
-    <strong><a href="/">ARTISAN</a></strong>
-    <nav>
-      <a href="/projects">Projects</a>
-      <a href="/nexus">Nexus</a>
-      <a href="/ai4science">AI4Science</a>
-      <a href="/people">People</a>
-      <a href="/publications">Publications</a>
-      <a href="/news">News</a>
-    </nav>
-  </div>
-</header>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>{{ page.title | default: site.title }}</title>
 
-<div class="wrap header-inner">
-  <div class="brand-block">
-    <a class="brand" href="{{ "/" | relative_url }}">ARTISAN</a>
-    <div class="subbrand">Georgia Institute of Technology</div>
-  </div>
-  ...
-</div>
+  <!-- Roboto: GT's recommended free web alternative -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
+  <!-- Your brand stylesheet -->
+  <link rel="stylesheet" href="{{ '/assets/css/gt-brand.css' | relative_url }}" />
+  <meta name="theme-color" content="#003057" />
+</head>
+<body>
+  {% include header.html %}
 
-<main class="wrap">
-  {{ content }}
-</main>
+  <main role="main">
+    {{ content }}
+  </main>
+
+  {% include footer.html %}
+</body>
+</html>

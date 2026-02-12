@@ -1,0 +1,55 @@
+/* === Georgia Tech Brand Base === */
+
+/* Colors (Primary + accessible golds) */
+:root {
+  --gt-gold: #B3A369;         /* Tech Gold (accent, backgrounds) */
+  --gt-gold-medium: #A4925A;  /* Large text on light bg (>= 24px) */
+  --gt-gold-dark: #857437;    /* Small bold text on light bg */
+  --gt-navy: #003057;         /* Primary dark (headers, nav) */
+  --gt-white: #FFFFFF;
+  --gt-gray-dark: #54585A;    /* Neutral dark gray */
+  --gt-gray-light: #D6DBD4;   /* Pi Mile */
+  --gt-ivory: #F9F6E5;        /* Diploma */
+}
+
+/* Typography */
+body {
+  font-family: "Roboto", system-ui, -apple-system, Segoe UI, Arial, sans-serif;
+  color: var(--gt-gray-dark);
+  line-height: 1.6;
+  background: var(--gt-white);
+}
+h1, h2, h3, h4 { font-weight: 700; color: var(--gt-navy); letter-spacing: .2px; }
+
+/* Accessible gold usage on light backgrounds */
+h1.gt-gold, h2.gt-gold { color: var(--gt-gold-medium); }
+.small-bold-gold { color: var(--gt-gold-dark); font-weight: 700; }
+
+/* Links & Focus */
+a { color: var(--gt-navy); text-decoration: underline; text-underline-offset: 2px; }
+a:hover, a:focus { color: var(--gt-gold-dark); }
+:focus-visible { outline: 3px solid var(--gt-gold); outline-offset: 2px; }
+
+/* Header / Nav */
+.site-header { background: var(--gt-navy); color: var(--gt-white); border-bottom: 4px solid var(--gt-gold); }
+.site-header a { color: var(--gt-white); text-decoration: none; }
+.site-header a:hover { color: var(--gt-gold); }
+
+/* Buttons */
+.btn { display:inline-block; padding:.6rem 1rem; border-radius:4px; font-weight:600; text-decoration:none;
+       border:2px solid var(--gt-navy); color:var(--gt-white); background:var(--gt-navy); }
+.btn:hover { background:#002341; border-color:#002341; }
+.btn--gold { background:var(--gt-gold); border-color:var(--gt-gold); color:var(--gt-navy); }
+.btn--gold:hover { background:#9f8e55; border-color:#9f8e55; }
+
+/* Sections / Cards / Footer */
+.section--alt { background: var(--gt-ivory); padding: 2rem 0; border-top: 1px solid var(--gt-gray-light); border-bottom: 1px solid var(--gt-gray-light); }
+.card { border: 1px solid var(--gt-gray-light); border-radius: 6px; padding: 1rem; background: var(--gt-white); }
+.site-footer { background: var(--gt-navy); color: var(--gt-white); border-top: 4px solid var(--gt-gold); padding: 2rem 0; }
+.site-footer a { color: var(--gt-gold); }
+
+/* Utilities */
+.text-navy { color: var(--gt-navy); }
+.text-gold { color: var(--gt-gold-dark); font-weight: 600; }
+.bg-navy { background: var(--gt-navy); color: var(--gt-white); }
+.bg-gold { background: var(--gt-gold); color: var(--gt-navy); }

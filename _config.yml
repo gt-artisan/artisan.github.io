@@ -1,11 +1,7 @@
-title: ARTISAN @ Georgia Tech
-description: Interdisciplinary research, AI4Science, and the Nexus cyberinfrastructure platform.
-url: https://gt-artisan.github.io
-
-markdown: kramdown
-plugins:
-  - jekyll-seo-tag
-  - jekyll-sitemap
-
-# Use our own layouts instead of a theme
+title: "ARTISAN — Georgia Tech"
+description: "Center for Artificial Intelligence in Science & Engineering at Georgia Tech"
+# If a theme is specified, comment it out to fully control the look:
+# theme: minima
+# Or be explicit:
 theme: null
+markdown: kramdown
