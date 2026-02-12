@@ -1,7 +1,13 @@
-- name: Cybershuttle
+# _data/projects.yml
+
+- name: "Cybershuttle"
   blurb: "Bridging local and remote computing for end-to-end scientific research."
   url: "https://github.com/gt-artisan/cybershuttle"
-- name: Plasma VLab
+
+- name: "Plasma VLab"
   blurb: "Virtual laboratory resources for plasma research."
   url: "https://github.com/GT-ARTISAN/Plasma-VLab"
-``
+
+- name: "SMILES"
+  blurb: "Software and data interfaces supporting the SMILES community."
+  url: "https://github.com/GT-ARTISAN"
