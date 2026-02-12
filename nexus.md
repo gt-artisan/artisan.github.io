@@ -1,6 +1,6 @@
 ---
-layout: page
-title: Nexus
+layout: default
+title: Nexus News
 ---
 
 # Nexus
