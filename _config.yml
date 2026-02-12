@@ -1,7 +1,29 @@
 title: "ARTISAN — Georgia Tech"
-description: "Center for Artificial Intelligence in Science & Engineering at Georgia Tech"
-# If a theme is specified, comment it out to fully control the look:
-# theme: minima
-# Or be explicit:
-theme: null
+description: "Center for Artificial Intelligence in Science and Engineering at Georgia Tech"
+baseurl: ""           # root
+url: "https://gt-artisan.github.io"
+theme: null           # use custom layout/css (no stock theme)
 markdown: kramdown
+
+collections:
+  news:
+    output: true
+    permalink: /news/:name/
+  events:
+    output: true
+    permalink: /events/:name/
+
+defaults:
+  - scope: { path: "" }
+    values: { layout: default }
+
+# Navigation labels (used in header include)
+nav:
+  - { label: "Home", href: "/" }
+  - { label: "Research", href: "/research" }
+  - { label: "Projects", href: "/projects" }
+  - { label: "Scientific Software", href: "/scientific-software" }
+  - { label: "Events", href: "/events" }
+  - { label: "ARTISAN Team", href: "/team" }
+  - { label: "Contact", href: "/contact" }
+  - { label: "Careers", href: "/careers" }

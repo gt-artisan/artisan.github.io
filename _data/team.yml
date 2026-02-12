@@ -1,0 +1,10 @@
+- name: Suresh Marru
+  title: Director — ARTISAN; Principal Research Scientist
+  scholar: "https://scholar.google.com/citations?user=FVWrKb0AAAAJ&sortby=pubdate"
+  linkedin: "https://www.linkedin.com/in/sureshmarru/"
+- name: Giri Krishnan
+  title: Associate Director — ARTISAN; Principal Research Scientist
+- name: Sudhakar Pamidighantam
+  title: Associate Director — ARTISAN; Principal Research Scientist
+# ... add the rest of the team
+``

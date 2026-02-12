@@ -1,28 +1,25 @@
-/* === Georgia Tech Brand Base === */
-
-/* Colors (Primary + accessible golds) */
+/* GT Colors (incl. accessible gold options) */
 :root {
-  --gt-gold: #B3A369;         /* Tech Gold (accent, backgrounds) */
-  --gt-gold-medium: #A4925A;  /* Large text on light bg (>= 24px) */
+  --gt-gold: #B3A369;         /* Tech Gold */
+  --gt-gold-medium: #A4925A;  /* Large text on light bg */
   --gt-gold-dark: #857437;    /* Small bold text on light bg */
-  --gt-navy: #003057;         /* Primary dark (headers, nav) */
+  --gt-navy: #003057;         /* Primary dark */
   --gt-white: #FFFFFF;
-  --gt-gray-dark: #54585A;    /* Neutral dark gray */
+  --gt-gray-dark: #54585A;    /* Gray Matter */
   --gt-gray-light: #D6DBD4;   /* Pi Mile */
   --gt-ivory: #F9F6E5;        /* Diploma */
 }
 
-/* Typography */
 body {
   font-family: "Roboto", system-ui, -apple-system, Segoe UI, Arial, sans-serif;
   color: var(--gt-gray-dark);
   line-height: 1.6;
   background: var(--gt-white);
 }
-h1, h2, h3, h4 { font-weight: 700; color: var(--gt-navy); letter-spacing: .2px; }
 
-/* Accessible gold usage on light backgrounds */
-h1.gt-gold, h2.gt-gold { color: var(--gt-gold-medium); }
+/* Headings */
+h1,h2,h3,h4 { color: var(--gt-navy); font-weight: 700; letter-spacing: .2px; }
+h1.gt-gold, h2.gt-gold { color: var(--gt-gold-medium); } /* accessible gold on white */
 .small-bold-gold { color: var(--gt-gold-dark); font-weight: 700; }
 
 /* Links & Focus */
@@ -30,10 +27,12 @@ a { color: var(--gt-navy); text-decoration: underline; text-underline-offset: 2p
 a:hover, a:focus { color: var(--gt-gold-dark); }
 :focus-visible { outline: 3px solid var(--gt-gold); outline-offset: 2px; }
 
-/* Header / Nav */
+/* Header */
 .site-header { background: var(--gt-navy); color: var(--gt-white); border-bottom: 4px solid var(--gt-gold); }
+.header-inner { max-width: 1100px; margin: 0 auto; padding: .75rem 1rem; display:flex; align-items:center; gap:1rem; }
 .site-header a { color: var(--gt-white); text-decoration: none; }
 .site-header a:hover { color: var(--gt-gold); }
+.site-nav { margin-left: auto; display: flex; gap: 1rem; }
 
 /* Buttons */
 .btn { display:inline-block; padding:.6rem 1rem; border-radius:4px; font-weight:600; text-decoration:none;
@@ -42,11 +41,17 @@ a:hover, a:focus { color: var(--gt-gold-dark); }
 .btn--gold { background:var(--gt-gold); border-color:var(--gt-gold); color:var(--gt-navy); }
 .btn--gold:hover { background:#9f8e55; border-color:#9f8e55; }
 
-/* Sections / Cards / Footer */
-.section--alt { background: var(--gt-ivory); padding: 2rem 0; border-top: 1px solid var(--gt-gray-light); border-bottom: 1px solid var(--gt-gray-light); }
-.card { border: 1px solid var(--gt-gray-light); border-radius: 6px; padding: 1rem; background: var(--gt-white); }
+/* Sections / Cards */
+.section { padding: 2.5rem 0; }
+.section--alt { background: var(--gt-ivory); border-top:1px solid var(--gt-gray-light); border-bottom:1px solid var(--gt-gray-light); }
+.container { max-width: 1100px; margin:0 auto; padding: 0 1rem; }
+.card { border:1px solid var(--gt-gray-light); border-radius:6px; padding:1rem; background: var(--gt-white); }
+.grid { display:grid; gap:1rem; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); }
+
+/* Footer */
 .site-footer { background: var(--gt-navy); color: var(--gt-white); border-top: 4px solid var(--gt-gold); padding: 2rem 0; }
 .site-footer a { color: var(--gt-gold); }
+.legal { font-size: .95rem; }
 
 /* Utilities */
 .text-navy { color: var(--gt-navy); }

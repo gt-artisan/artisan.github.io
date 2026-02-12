@@ -1,18 +1,15 @@
 ---
-layout: default
-title: Interdisciplinary Research
+title: "Research — ARTISAN"
 ---
 
-# Interdisciplinary Research
+# Research
 
-ARTISAN sits at the intersection of **AI**, **cyberinfrastructure**, and **computational science**.
+## Cyberinfrastructure & Distributed Systems for Scientific Computing & AI {#ci}
+We develop scalable, high-performance distributed systems that power AI and scientific research. [1](https://artisan.research.gatech.edu/)
 
-## Themes
-- **End-to-end research workflows** (from interactive setup to scale-out runs)
-- **Reproducibility & provenance** (traceable computational experiments)
-- **Gateway ecosystems** (community-facing science platforms)
+## AI-Driven Solutions for Science & Engineering {#ai-se}
+We design AI/ML approaches for protein modeling, quantum chemistry, climate modeling, and neuroscience. [9](https://artisan.research.gatech.edu/ai-driven-solutions-for-science-and-engineering/)
 
-## Example Areas
-- Computational chemistry workflows and automation
-- Neuroscience modeling pipelines (e.g., simulation orchestration)
-- Earth science data platforms and analysis services
+## Interpretable AI for Scientific Discovery {#interpretable}
+We advance AI systems that make accurate predictions and provide meaningful insights for science. [1](https://artisan.research.gatech.edu/)
+``

@@ -1,70 +1,50 @@
 ---
-layout: default
-title: ARTISAN
+title: "ARTISAN — Georgia Tech"
 ---
 
-# ARTISAN  
-### AI + Cyberinfrastructure for Science & Engineering  
-Georgia Institute of Technology
+<section class="bg-navy section">
+  <div class="container">
+    <h1 class="gt-gold" style="margin-bottom:.25rem;">Center for Artificial Intelligence in Science & Engineering</h1>
+    <p style="max-width:65ch;color:#E6EDF5;">
+      A joint Center between the College of Computing and the Institute for Data Engineering and Science dedicated to accelerating science & engineering with AI, cyberinfrastructure, and open platforms.
+    </p>
+    /research" class="btn btn--gold">Explore Research</a>
+    /projects" class="btn" style="margin-left:.5rem;">View Projects</a>
+  </div>
+</section>
 
----
+<section class="section">
+  <div class="container">
+    <h2 class="text-navy">Latest News & Events</h2>
+    <div class="grid">
+      {% assign latest_news = site.news | sort: "date" | reverse | slice: 0,3 %}
+      {% for post in latest_news %}
+      <article class="card">
+        {{ post.title }}</a>
+        <p style="margin:.25rem 0 .5rem 0; color:#666;">{{ post.date | date: "%b %d, %Y" }}</p>
+        <p>{{ post.excerpt }}</p>
+      </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>
 
-## Mission
-
-ARTISAN advances **AI-enabled scientific discovery** through interdisciplinary research, 
-open-source cyberinfrastructure, and scalable computing platforms.
-
-We focus on reducing friction in computational science — enabling researchers to move seamlessly from interactive local exploration to large-scale, reproducible experiments on shared and national resources.
-
----
-
-## Flagship Platforms
-
-### Nexus
-A local-first research computing platform that enables seamless scale-up from interactive workflows to HPC and cloud resources.
-
-- [Overview](nexus)
-- [Projects](projects#nexus)
-- [Publications](publications)
-
----
-
-### AI4Science
-Domain-aware AI systems that assist scientists with input generation, workflow construction, benchmarking, and experiment automation.
-
-- [Overview](ai4science)
-- [Projects](projects#ai4science)
-- [Publications](publications)
-
----
-
-### Open-Source Cyberinfrastructure
-Middleware and platforms for federated identity, workflow execution, data movement, and reproducible scientific computing.
-
-- [Software Projects](projects#software)
-- [GitHub Organization](https://github.com/GT-ARTISAN)
-
----
-
-## Research Themes
-
-- AI systems grounded in real scientific workflows  
-- Interdisciplinary computational science (chemistry, neuroscience, earth science)  
-- Distributed systems for scalable research computing  
-- Reproducibility, provenance, and experiment automation  
-
----
-
-## News
-
-- **2025** — Nexus platform launched at Georgia Tech  
-- **2024** — Expansion of AI4Science research initiatives  
-
-[More updates →](news)
-
----
-
-## Collaboration
-
-ARTISAN emphasizes open-source development, community platforms, and collaborative research.  
-Primary funding sources include **NSF and NASA**.
+<section class="section section--alt">
+  <div class="container">
+    <h2 class="text-navy">Research Areas</h2>
+    <div class="grid">
+      <div class="card">
+        /research#ci" class="text-navy"><strong>Cyberinfrastructure & Distributed Systems</strong></a>
+        <p>Scalable, high-performance systems powering AI and scientific research.</p>
+      </div>
+      <div class="card">
+        /research#ai-se" class="text-navy"><strong>AI-Driven Solutions for S&E</strong></a>
+        <p>Domain-tailored AI/ML for protein modeling, quantum chemistry, climate, neuroscience.</p>
+      </div>
+      <div class="card">
+        /research#interpretable" class="text-navy"><strong>Interpretable AI for Discovery</strong></a>
+        <p>Accurate predictions with insight to advance scientific theories and knowledge.</p>
+      </div>
+    </div>
+  </div>
+</section>

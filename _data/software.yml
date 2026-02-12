@@ -1,0 +1,10 @@
+- name: Apache Airavata
+  desc: "Open-source framework for workflows and apps on distributed HPC/cloud."
+  url: "https://airavata.apache.org/"
+- name: Apache Custos
+  desc: "Open-source IAM for science gateways (OAuth2/OIDC, group/role mgmt)."
+  url: "https://github.com/apache/custos"
+- name: Airavata MFT
+  desc: "High-performance, secure data movement across HPC/cloud."
+  url: "https://github.com/apache/airavata-mft"
+``
