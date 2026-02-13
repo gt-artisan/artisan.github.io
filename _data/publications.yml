@@ -76,10 +76,10 @@
   - Marru, Suresh
   - Pierce, Marlon
   venue: arXiv preprint arXiv:2107.03882
-- id: christie2023airavata
-  type: incollection
-  title: 'Airavata data catalog: A multi-tenant metadata service for efficient data
-    discovery and access control'
+- id: 10.1145/3569951.3597572
+  type: inproceedings
+  title: 'Airavata Data Catalog: A Multi-tenant Metadata Service for Efficient Data
+    Discovery and Access Control'
   year: 2023
   authors:
   - Christie, Marcus
@@ -89,6 +89,8 @@
   - Wannipurage, Dimuthu
   venue: 'Practice and Experience in Advanced Research Computing 2023: Computing for
     the Common Good'
+  doi: 10.1145/3569951.3597572
+  url: https://doi.org/10.1145/3569951.3597572
 - id: ranawaka2023airavata
   type: incollection
   title: 'Airavata Metascheduler: A Reliable, Fault Tolerant, and Resource-Aware Job
@@ -106,23 +108,6 @@
   - Pierce, Marlon
   venue: 'Practice and Experience in Advanced Research Computing 2023: Computing for
     the Common Good'
-- id: ranawaka2020custos
-  type: incollection
-  title: 'Custos: Security middleware for science gateways'
-  year: 2020
-  authors:
-  - Ranawaka, Isuru
-  - Marru, Suresh
-  - Graham, Juleen
-  - Bisht, Aarushi
-  - Basney, Jim
-  - Fleury, Terry
-  - Gaynor, Jeff
-  - Wannipurage, Dimuthu
-  - Christie, Marcus
-  - Mahmoud, Alexandru
-  - others
-  venue: 'Practice and Experience in Advanced Research Computing 2020: Catch the Wave'
 - id: marru2023blaze
   type: inproceedings
   title: 'Blaze: A high-performance, scalable, and efficient data transfer framework
