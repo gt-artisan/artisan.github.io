@@ -4,77 +4,56 @@ title: "Publications — ARTISAN"
 
 # Publications
 
-{% comment %}
-Reads _data/publications.yml (top-level array recommended).
-Fields supported: title, authors (list or string), venue, year, doi, url, pdf, arxiv
-This template is Liquid-safe (every block is properly closed).
-{% endcomment %}
-
 {% assign pubs = site.data.publications | default: empty %}
 
 {% if pubs and pubs.size > 0 %}
-
-  {%- comment -%} Sort newest year first and build a unique list of years {%- endcomment -%}
   {% assign pubs_sorted = pubs | sort: "year" | reverse %}
   {% assign years = pubs_sorted | map: "year" | uniq %}
 
   {% for y in years %}
-  ## {{ y }}
+  <h2 class="pub-year">{{ y }}</h2>
 
   <div class="grid">
     {% for p in pubs_sorted %}
       {% if p.year == y %}
-      <article class="card">
-        <h3 class="text-navy" style="margin-bottom:.25rem;">{{ p.title }}</h3>
+      <article class="pub-card card">
 
-        {%- comment -%} Authors line (works if authors is a list OR string) {%- endcomment -%}
+        <div class="pub-title">{{ p.title }}</div>
+
         {% if p.authors %}
           {% if p.authors.first %}
-            <p style="margin:.25rem 0;"><em>{{ p.authors | join: ", " }}</em></p>
+            <div class="pub-authors"><em>{{ p.authors | join: ", " }}</em></div>
           {% else %}
-            <p style="margin:.25rem 0;"><em>{{ p.authors }}</em></p>
+            <div class="pub-authors"><em>{{ p.authors }}</em></div>
           {% endif %}
         {% endif %}
 
-        {%- comment -%} Venue + year (redundant but fine inside the card) {%- endcomment -%}
-        <p style="margin:.25rem 0;">
-          {% if p.venue %}<span>{{ p.venue }}</span>{% endif %}
-          {% if p.venue and p.year %} · {% endif %}
-          {% if p.year %}<span>{{ p.year }}</span>{% endif %}
-        </p>
+        <div class="pub-meta">
+          {% if p.venue %}{{ p.venue }}{% endif %}
+          {% if p.year %} · {{ p.year }}{% endif %}
+        </div>
 
-        {%- comment -%} Links row (show only those that exist) {%- endcomment -%}
-        {% assign has_prev = false %}
-        <p style="margin:.25rem 0;">
+        <div class="pub-links">
           {% if p.doi %}
-            {{ "https://doi.org/" | append: p.doi }}DOI</a>
-            {% assign has_prev = true %}
+            <a class="pub-link" href="https://doi.org/{{ p.doi }}" target="_blank">DOI</a>
           {% endif %}
-
           {% if p.arxiv %}
-            {% if has_prev %} · {% endif %}
-            {{ p.arxiv }}arXiv</a>
-            {% assign has_prev = true %}
+            <a class="pub-link" href="https://arxiv.org/abs/{{ p.arxiv }}" target="_blank">arXiv</a>
           {% endif %}
-
           {% if p.url %}
-            {% if has_prev %} · {% endif %}
-            {{ p.url }}Link</a>
-            {% assign has_prev = true %}
+            <a class="pub-link" href="{{ p.url }}" target="_blank">Link</a>
           {% endif %}
-
           {% if p.pdf %}
-            {% if has_prev %} · {% endif %}
-            {{ p.pdf }}PDF</a>
+            <a class="pub-link" href="{{ p.pdf }}" target="_blank">PDF</a>
           {% endif %}
-        </p>
+        </div>
+
       </article>
       {% endif %}
     {% endfor %}
   </div>
 
   {% endfor %}
-
 {% else %}
-  <p>No publications found. Ensure <code>_data/publications.yml</code> exists and contains an array of entries.</p>
+  <p>No publications found.</p>
 {% endif %}

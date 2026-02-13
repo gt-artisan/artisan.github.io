@@ -58,3 +58,47 @@ a:hover, a:focus { color: var(--gt-gold-dark); }
 .text-gold { color: var(--gt-gold-dark); font-weight: 600; }
 .bg-navy { background: var(--gt-navy); color: var(--gt-white); }
 .bg-gold { background: var(--gt-gold); color: var(--gt-navy); }
+
+.pub-year {
+  font-size: 1.9rem;
+  font-weight: 700;
+  color: var(--gt-navy);
+  margin: 2.5rem 0 1rem;
+  border-left: 6px solid var(--gt-gold);
+  padding-left: 1rem;
+}
+
+.pub-card {
+  padding: 1.2rem 1.4rem;
+  border-left: 4px solid var(--gt-gold);
+}
+.pub-title {
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--gt-navy);
+}
+.pub-authors {
+  margin-top: .2rem;
+  color: #555;
+  font-style: italic;
+}
+.pub-meta {
+  margin-top: .3rem;
+  color: var(--gt-gray-dark);
+  font-size: .95rem;
+}
+.pub-links {
+  margin-top: .6rem;
+}
+.pub-link {
+  margin-right: 0.75rem;
+  padding: .2rem .5rem;
+  border-radius: 4px;
+  background: var(--gt-gray-light);
+  font-size: .8rem;
+  text-decoration: none;
+  color: var(--gt-navy);
+}
+.pub-link:hover {
+  background: var(--gt-gold-medium);
+}
