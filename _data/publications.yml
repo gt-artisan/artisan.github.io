@@ -108,25 +108,6 @@
   - Pierce, Marlon
   venue: 'Practice and Experience in Advanced Research Computing 2023: Computing for
     the Common Good'
-- id: marru2023blaze
-  type: inproceedings
-  title: 'Blaze: A high-performance, scalable, and efficient data transfer framework
-    with configurable and extensible features: Principles, implementation, and evaluation
-    of a transatlantic inter-cloud data transfer case study'
-  year: 2023
-  authors:
-  - Marru, Suresh
-  - Freitag, Brian
-  - Wannipurage, Dimuthu
-  - Bommala, Uday Kumar
-  - Pradier, Patrick
-  - Demange, Christophe
-  - Pantha, Nishan
-  - Mukherjee, Tathagata
-  - Rosich, Betlem
-  - Monjoux, Eric
-  - others
-  venue: 2023 IEEE 16th International Conference on Cloud Computing (CLOUD)
 - id: sciencegateways2015survey
   type: article
   title: 'Science gateways today and tomorrow: positive perspectives of nearly 5000
