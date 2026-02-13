@@ -142,3 +142,39 @@
   - Monjoux, Eric
   - others
   venue: 2023 IEEE 16th International Conference on Cloud Computing (CLOUD)
+- id: sciencegateways2015survey
+  type: article
+  title: 'Science gateways today and tomorrow: positive perspectives of nearly 5000
+    members of the research community'
+  year: 2015
+  authors:
+  - Lawrence, Katherine A.
+  - Zentner, Michael
+  - Wilkins-Diehr, Nancy
+  - Wernert, Julie A.
+  - Pierce, Marlon
+  - Marru, Suresh
+  - Michael, Scott
+  venue: 'Concurrency and Computation: Practice and Experience'
+  doi: https://doi.org/10.1002/cpe.3526
+  url: https://onlinelibrary.wiley.com/doi/abs/10.1002/cpe.3526
+- id: 10.1145/3311790.3396635
+  type: inproceedings
+  title: 'Custos: Security Middleware for Science Gateways'
+  year: 2020
+  authors:
+  - Ranawaka, Isuru
+  - Marru, Suresh
+  - Graham, Juleen
+  - Bisht, Aarushi
+  - Basney, Jim
+  - Fleury, Terry
+  - Gaynor, Jeff
+  - Wannipurage, Dimuthu
+  - Christie, Marcus
+  - Mahmoud, Alexandru
+  - Afgan, Enis
+  - Pierce, Marlon
+  venue: 'Practice and Experience in Advanced Research Computing 2020: Catch the Wave'
+  doi: 10.1145/3311790.3396635
+  url: https://doi.org/10.1145/3311790.3396635
