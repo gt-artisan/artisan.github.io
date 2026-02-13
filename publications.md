@@ -4,6 +4,26 @@ title: "Publications — ARTISAN"
 
 # Publications
 
+<label for="yearFilter" class="text-navy" style="font-weight:600;">Filter by year:</label>
+<select id="yearFilter" onchange="filterYear()">
+  <option value="all">All years</option>
+  {% for y in years %}
+    <option value="{{ y }}">{{ y }}</option>
+  {% endfor %}
+</select>
+
+<script>
+function filterYear() {
+  const sel = document.getElementById('yearFilter').value;
+  document.querySelectorAll('.pub-year').forEach((h2) => {
+    const sectionGrid = h2.nextElementSibling;
+    const show = (sel === 'all' || h2.textContent.trim() === sel);
+    h2.style.display = show ? 'block' : 'none';
+    if (sectionGrid) sectionGrid.style.display = show ? 'grid' : 'none';
+  });
+}
+</script>
+
 {% assign pubs = site.data.publications | default: empty %}
 
 {% if pubs and pubs.size > 0 %}
@@ -57,3 +77,26 @@ title: "Publications — ARTISAN"
 {% else %}
   <p>No publications found.</p>
 {% endif %}
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"ItemList",
+  "itemListElement": [
+    {% for p in pubs_sorted %}
+    {
+      "@type":"ScholarlyArticle",
+      "name": {{ p.title | jsonify }},
+      {% if p.authors %}
+      "author": [{% if p.authors.first %}{% for a in p.authors %}{"@type":"Person","name":{{ a | jsonify }}}{% unless forloop.last %},{% endunless %}{% endfor %}{% else %}{"@type":"Person","name":{{ p.authors | jsonify }}}{% endif %}],
+      {% endif %}
+      {% if p.venue %}"isPartOf":{"@type":"Periodical","name":{{ p.venue | jsonify }}},{% endif %}
+      {% if p.year %}"datePublished":"{{ p.year }}",{% endif %}
+      {% if p.doi %}"identifier":"https://doi.org/{{ p.doi }}",{% endif %}
+      {% if p.url %}"url": {{ p.url | jsonify }},{% endif %}
+      {% if p.pdf %}"encoding":{"@type":"MediaObject","contentUrl": {{ p.pdf | jsonify }} }{% endif %}
+    }{% unless forloop.last %},{% endunless %}
+    {% endfor %}
+  ]
+}
+</script>

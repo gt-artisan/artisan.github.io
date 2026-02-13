@@ -1,27 +1,26 @@
-<!doctype html>
-<html lang="en">
 <head>
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <title>{{ page.title | default: site.title }}</title>
 
-  <!-- Load Roboto (GT’s recommended free web alternative) -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
+  <!-- Performance: preconnect + Roboto (GT digital type recommendation) -->
+  https://fonts.googleapis.com
+  https://fonts.gstatic.com
+  https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap
 
-  <!-- Load GT brand stylesheet -->
-  <link rel="stylesheet" href="{{ '/assets/css/gt-brand.css' | relative_url }}">
-
+  <!-- Brand CSS with robust path -->
+  {{ 
   <meta name="theme-color" content="#003057"/>
+
+  <!-- Basic SEO & OpenGraph: jekyll-seo-tag is allowed on GitHub Pages -->
+  {% seo %}
 </head>
 <body>
+  <!-- Accessibility: keyboard users can jump to main content -->
+  #contentSkip to main content</a>
   {% include header.html %}
-
   <main id="content" role="main">
     {{ content }}
   </main>
-
   {% include footer.html %}
 </body>
-</html>

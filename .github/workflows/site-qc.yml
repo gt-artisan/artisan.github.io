@@ -1,0 +1,28 @@
+name: Site QC
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: YAML lint
+        run: |
+          pip install yamllint
+          yamllint _data
+
+  links:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.2'
+      - run: |
+          gem install bundler html-proofer
+          bundle exec jekyll build
+          htmlproofer ./_site --allow_hash_href --checks_to_ignore ScriptCheck --enforce_https
+          
