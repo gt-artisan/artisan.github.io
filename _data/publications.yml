@@ -178,3 +178,23 @@
   venue: 'Practice and Experience in Advanced Research Computing 2020: Catch the Wave'
   doi: 10.1145/3311790.3396635
   url: https://doi.org/10.1145/3311790.3396635
+- id: blaze2023
+  type: inproceedings
+  title: 'Blaze: A High-Performance, Scalable, and Efficient Data Transfer Framework
+    with Configurable and Extensible Features : Principles, Implementation, and Evaluation
+    of a Transatlantic Inter-Cloud Data Transfer Case Study'
+  year: 2023
+  authors:
+  - Marru, Suresh
+  - Freitag, Brian
+  - Wannipurage, Dimuthu
+  - Bommala, Uday Kumar
+  - Pradier, Patrick
+  - Demange, Christophe
+  - Pantha, Nishan
+  - Mukherjee, Tathagata
+  - Rosich, Betlem
+  - Monjoux, Eric
+  - Ramachandran, Rahul
+  venue: 2023 IEEE 16th International Conference on Cloud Computing (CLOUD)
+  doi: 10.1109/CLOUD60044.2023.00016
